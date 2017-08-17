@@ -1,0 +1,18 @@
+{
+  "name": "pupperteer-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^0.9.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1"
+  }
+}
