@@ -9,6 +9,7 @@ script:
 - git fetch origin
 - git checkout $TRAVIS_BRANCH || git checkout -b $TRAVIS_BRANCH
 - yarn test
+- yarn run reg-suit
 
 env:
   global:
