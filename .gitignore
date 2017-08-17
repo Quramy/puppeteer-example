@@ -62,4 +62,5 @@ typings/
 .env
 
 # End of https://www.gitignore.io/api/node
-example.png
+.reg/
+actual_images/

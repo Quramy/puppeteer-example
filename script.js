@@ -5,13 +5,13 @@ const rimraf = require('rimraf');
 
 (async() => {
 
-  rimraf.sync('example.png');
+  rimraf.sync('actual_images/*.png');
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto('https://reg-viz.github.io/reg-suit');
-  await page.screenshot({path: 'example.png'});
+  await page.screenshot({ path: 'actual_images/example.png', fullPage: true });
 
   browser.close();
-  assert(fs.existsSync('example.png'));
+  assert(fs.existsSync('actual_images/example.png'));
   console.log(' 🎉 ');
 })();
