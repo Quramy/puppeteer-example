@@ -6,8 +6,4 @@ build:
         name: Workaround for puppeteer#290
         code: sh ./fix_290.sh
     - npm-install
-    - script:
-        name: run chrome
-        code: |
-          ./node_modules/puppeteer/.local-chromium/linux-494755/chrome-linux/chrome --no-sandbox --disable-setuid-sandbox
     - npm-test
