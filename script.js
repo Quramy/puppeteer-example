@@ -6,7 +6,7 @@ const rimraf = require('rimraf');
 (async() => {
 
   rimraf.sync('actual_images/*.png');
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch(['--no-sandbox', '--disable-setuid-sandbox']);
   const page = await browser.newPage();
   await page.goto('https://reg-viz.github.io/reg-suit');
   await page.screenshot({ path: 'actual_images/example.png', fullPage: true });
