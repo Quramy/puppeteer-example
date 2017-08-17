@@ -1,15 +1,20 @@
 os:
 - linux
+
 language: node_js
+
 node_js:
 - '8'
 
-script:
+before_script:
 - git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 - git fetch origin
 - git checkout $TRAVIS_BRANCH || git checkout -b $TRAVIS_BRANCH
+
+script:
+- yarn
 - yarn test
-- yarn run reg
+- [ "$TRAVIS_EVENT_TYPE" == "push" ] && yarn run reg
 
 env:
   global:
