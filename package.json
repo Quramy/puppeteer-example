@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mkdir -p actual_images && node script.js"
+    "test": "mkdir -p actual_images && node script.js",
+    "posttest": "reg-suit run -v"
   },
   "keywords": [],
   "author": "",
