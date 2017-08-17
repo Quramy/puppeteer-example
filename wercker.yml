@@ -4,7 +4,6 @@ build:
   steps:
     - script:
         name: Workaround for puppeteer#290
-        code: |
-          bash fix_290.sh
+        code: sh ./fix_290.sh
     - npm-install
     - npm-test
