@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mkdir -p actual_images && node script.js",
-    "reg-suit": "reg-suit run -v"
+    "reg": "reg-suit run -v"
   },
   "keywords": [],
   "author": "",
