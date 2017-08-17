@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node script.js"
+    "test": "mkdir -p actual_images && node script.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^0.9.0"
+    "puppeteer": "^0.9.0",
+    "reg-suit": "^0.5.1"
   },
   "devDependencies": {
+    "reg-keygen-git-hash-plugin": "^0.5.1",
+    "reg-notify-github-plugin": "^0.5.1",
+    "reg-publish-s3-plugin": "^0.5.1",
     "rimraf": "^2.6.1"
   }
 }
